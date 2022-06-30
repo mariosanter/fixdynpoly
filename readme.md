@@ -25,7 +25,8 @@ The source code is structured according to the methods described in the appendix
 ```det.py``` contains a function to run deterministic simulations. Main parameters are the almost the same as in ```stoch``` (above, population size is obviously not a parameter here). Moreover, there is a parameter  ```xthr```for the threshold of fixation (see main text).
 
 - To solve the determinstic dynamics we use a matrix equation reflecting the system of ordinary differential equations (see main text):
-  $$
+
+$$
   \begin{aligned}
   \frac{\mathrm{d}x_j}{\mathrm{d}t} &=
   \sum_{i=0}^{n} \left\{ x_i \lambda_i (2 p^{(2)}_{i \rightarrow j} +  p^{(1)}_{i \rightarrow j} - x_j) \right\}
@@ -37,7 +38,7 @@ The source code is structured according to the methods described in the appendix
   & = (\mathtt{M1}+\mathtt{M2}(\mathbf{x}))\mathbf{x}
   \eqqcolon \mathtt{rhs(t,\mathbf{x})}
   \end{aligned}
-  $$
+$$
   
 
   $\mathbf{x}=(x_0,\dots,x_n)$, $\mathbf{\lambda}=(\lambda_0,\dots,\lambda_n)$, $\delta$ denotes Kronecker's delta, $\otimes$ is the tensor (outer) product.
@@ -53,7 +54,7 @@ Please make sure you have installed the following python packages :
 
 ### Contributing
 
-The source code of ```mcrfix``` is also stored on ```github.com/mariosanter/mcrfix```. Please consider a contribution or contact Mario Santer, email: santer{at}evolbio.mpg.de.
+The source code of ```mcrfix``` is also stored on ```github.com/mariosanter/fixdynpoly```. Please consider contacting Mario Santer, email: santer{at}evolbio.mpg.de.
 
 ## mma/
 
